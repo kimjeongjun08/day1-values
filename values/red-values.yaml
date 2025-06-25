@@ -15,4 +15,4 @@ app:
     - name: DB_URL
       value: skills-db-cluster.cluster-cde69tvxoswa.ap-northeast-2.rds.amazonaws.com
   rollout:
-    enabled: true
+    enabled: false
