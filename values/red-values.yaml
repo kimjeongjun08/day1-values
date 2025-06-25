@@ -1,5 +1,5 @@
 app:
-  name: red-app
+  name: red-deploy
   image:
     repository: 950274644703.dkr.ecr.ap-northeast-2.amazonaws.com/skills-red-repo
     tag: v1.0.0
