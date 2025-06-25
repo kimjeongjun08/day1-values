@@ -1,5 +1,5 @@
 app:
-  name: red-deploy
+  name: green-deploy
   image:
     repository: 950274644703.dkr.ecr.ap-northeast-2.amazonaws.com/skills-green-repo
     tag: v1.0.0
