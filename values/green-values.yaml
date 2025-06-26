@@ -11,15 +11,15 @@ app:
     - name: DB_USER
       valueFrom:
         secretKeyRef:
-          name: secrets-manager-secret
+          name: skills-secrets
           key: DB_USER
     - name: DB_PASSWD
       valueFrom:
         secretKeyRef:
-          name: secrets-manager-secret
+          name: skills-secrets
           key: DB_PASSWD
     - name: DB_URL
       valueFrom:
         secretKeyRef:
-          name: secrets-manager-secret
+          name: skills-secrets
           key: DB_URL
