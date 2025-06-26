@@ -9,8 +9,17 @@ app:
     port: 80
   env:
     - name: DB_USER
-      value: admin
+      valueFrom:
+        secretKeyRef:
+          name: secrets-manager-secret
+          key: DB_USER
     - name: DB_PASSWD
-      value: Skill53##
+      valueFrom:
+        secretKeyRef:
+          name: secrets-manager-secret
+          key: DB_PASSWD
     - name: DB_URL
-      value: skills-db-cluster.cluster-cde69tvxoswa.ap-northeast-2.rds.amazonaws.com
+      valueFrom:
+        secretKeyRef:
+          name: secrets-manager-secret
+          key: DB_URL
