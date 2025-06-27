@@ -3,7 +3,7 @@ app:
   namespace: skills
   image:
     repository: 950274644703.dkr.ecr.ap-northeast-2.amazonaws.com/skills-red-repo
-    tag: v1.0.1
+    tag: v1.0.0
   port: 8080
   service:
     port: 80
