@@ -11,15 +11,15 @@ app:
     - name: DB_USER
       valueFrom:
         secretKeyRef:
-          name: aws-secrets-manager
+          name: secrets-manager-secret
           key: DB_USER
     - name: DB_PASSWD
       valueFrom:
         secretKeyRef:
-          name: aws-secrets-manager
+          name: secrets-manager-secret
           key: DB_PASSWD
     - name: DB_URL
       valueFrom:
         secretKeyRef:
-          name: aws-secrets-manager
+          name: secrets-manager-secret
           key: DB_URL
