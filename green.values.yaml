@@ -8,7 +8,7 @@ env:
   passwd: DB_PASSWD
   user: DB_USER
   url: DB_URL
-  secretkey: skills-secrets
+  secretkey: secrets-manager-secret
 
 svc:
   name: green-service
