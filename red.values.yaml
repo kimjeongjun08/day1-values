@@ -9,3 +9,9 @@ env:
   user: DB_USER
   url: DB_URL
   secretkey: skills-secrets
+
+svc:
+  name: red-service
+  type: NodePort
+  port: 80
+  targetPort: 8080
