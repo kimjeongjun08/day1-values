@@ -1,27 +1,11 @@
-deployname:
-  green: green-deploy
-  red: red-deploy
+name: red-deploy
 namespace: skills
-
+labels: app
 containers:
-  green: green
-  red: red
-
-image:
-  green: 003150130236.dkr.ecr.ap-northeast-2.amazonaws.com/skills-green-repo:v1.0.0
-  red: 003150130236.dkr.ecr.ap-northeast-2.amazonaws.com/skills-red-repo:v1.0.0
-
+  name: red-containers
+  image: 003150130236.dkr.ecr.ap-northeast-2.amazonaws.com/skills-red-repo:v1.0.0
 env:
   passwd: DB_PASSWD
   user: DB_USER
   url: DB_URL
-  secretykey: skills-secrets
-
-replicas: 2
-
-labels: app
-
-service:
-  type: NodePort
-  port: 80
-  targetPort: 8080
+  secretkey: skills-secrets
